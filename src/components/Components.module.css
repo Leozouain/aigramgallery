@@ -1,0 +1,204 @@
+.dark {
+  --primary-color: rgb(24, 2, 66);
+  --secondary-color: rgb(69, 2, 98);
+  --third-color: rgb(197, 40, 218);
+  --text-color: white;
+  --text-size: 18px;
+  --title-size: 2rem;
+  transition: 1s;
+}
+
+.light{
+  --primary-color:rgb(248,248,255);
+  --secondary-color: rgb(0,127,255);
+  --third-color: rgb(0, 55, 131);
+  --text-color: white;
+  --text-size: 18px;
+  --title-size: 2rem;
+   transition: 1s;
+}
+
+
+:root{
+  background-color: var(--primary-color);
+}
+
+:root #file-upload-button{
+  background-color: var(--third-color );
+  color: var(--text-color);
+}
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+
+:root button {
+  background-color: var(--third-color);
+  color: var(--text-color);
+  cursor: pointer;
+  outline: none;
+  font-size: var(--text-size);
+}
+
+:root h2{
+  font-size: var(--title-size);
+  margin: 15px 0
+}
+
+:root h4{
+  font-size: var(--text-size);
+  line-height: 1.6rem;
+  letter-spacing: 3px;
+}
+:root body{
+  background-color: var(--primary-color);
+}
+
+:root textarea{
+  color: black;
+}
+
+
+
+:root input[type="file"]::file-selector-button {
+  background-color: var(--third-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btnMode{
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: 1s ease;
+}
+
+.link{
+  color: var(--text-color);
+  margin: 0 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.link:hover,
+.linkOpen:hover{
+  background-color: var(--third-color);
+  color: var(--text-color);
+ 
+  
+}
+
+.linkOpen:focus{
+  background-color: none;
+}
+
+.linkOpen{
+  color: var(--text-color);
+  margin: 0.8rem;
+  
+  border: none;
+  
+}
+
+.cardOpen{
+  animation: cardOpen 2s ease-in-out forwards;
+}
+
+.cardClose{
+  animation: cardClose 2s ease-in-out forwards;
+}
+
+.newsImg{
+  height: 20vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.like{
+  animation: heartLike 1.5s ease-in-out forwards;
+}
+
+.btnOpen{
+ 
+  animation: menuOpen 0.5s forwards; 
+  
+}
+
+.btnClose{
+ 
+  animation: menuClose 0.5s forwards; 
+  
+}
+
+.slider{
+  animation: slideAnimation 35s infinite linear
+}
+
+
+
+
+@keyframes menuOpen {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes menuClose {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes cardOpen {
+  from {
+    height: ;
+  }
+  to {
+    height: 2%;
+  }
+}
+
+@keyframes cardClose {
+  from {
+    height: 2%;
+  }
+  to {
+    height: ;
+  }
+}
+
+@keyframes heartLike {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
