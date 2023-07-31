@@ -26,7 +26,7 @@ To clone and run this project locally, you'll need [Node.js](https://nodejs.org)
 
 ### Clone the Repository
 
-git clone https://github.com/Leozouain/aigram.git
+git clone https://github.com/Leozouain/aigramgallery.git
 
 shell
 Copy code
