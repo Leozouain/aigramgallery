@@ -5,17 +5,17 @@ AIGram is an image gallery created by artificial intelligence, where you can exp
 The site features a responsive layout, ensuring a seamless experience across different devices.
 
 
-#Switch colors mode
+### Switch colors mode
 
 ![project demo](./src/assets/gif1.gif)
 
 
-#Gallery Demonstration
+### Gallery Demonstration
 
 ![project demo](./src/assets/gif2.gif)
 
 
-#Responsive Layout
+### Responsive Layout
 
 ![project demo](./src/assets/gif3.gif)
 
